@@ -27,11 +27,11 @@ ya que se linkea al crear el ejecutable.
 - Los descriptores que surgen al realizar nm *.o indican
 el estado de las funciones. En este caso de nm calculator.o 
 genera:
-"""
+```
 T add_numbers,
 T main,
 U printf.
-"""
+```
 Las T se refieren a funciones definidas en el objeto,
 que pueden ser llamadas externamente,
 mientras que la U indica undefined, ya que al momento
