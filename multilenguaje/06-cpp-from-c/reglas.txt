@@ -1,0 +1,11 @@
+
+Cambie el header del archivo agregando la sentencia
+extern "C" {} para llamar desde el main de c a la 
+funcion como sum_abs
+
+Luego compile:
+
+g++ -c cpp-sum.cpp 
+gcc -c c-main.c
+
+gcc *.o -o main.e

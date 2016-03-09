@@ -2,21 +2,18 @@
 
 #define NUM 200
 
-extern void sum_abs_(int *inp, int *num, int *asum);
+extern int sum_abs(const int * const inp, const int num);
 
 int main(int argc, char **argv)
 {
     int data[NUM], num, i;
-    int sum;
 
     num = NUM;
     for (i=0; i < num; i++) {
         data[i] = i - 100 + 1;  /* NOTE: difference in array numbering */  
     }
 
-    sum_abs_(data, &num, &sum);
-
-    printf("sum=%d\n", sum);
+    printf("sum=%d\n", sum_abs(data, num));
 
     return 0;
 }

@@ -1,0 +1,14 @@
+
+En el main de c escribo un header que 
+llame a una funcion extern void sum_abs_() con
+punteros como parametros.
+Esta funcion esta definida en el archivo de FORTRAN
+
+Compilo:
+
+gfortran -c f-sum.f90
+gcc -c c-main.c
+
+y linkeo
+
+gcc f-sum.o c-main.o -o main.e

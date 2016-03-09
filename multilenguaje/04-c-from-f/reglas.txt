@@ -1,0 +1,24 @@
+Redefino la funcion en c-sum.c como sum_abs_ con el "_" final
+ya que al compilar f-main.f90 con:
+
+gfortran -c f-main.f90 -o f-main.o
+
+en la lista de objetos que aparecen nombra a la funcion sum_abs
+como "sum_abs_"
+
+Los argumentos que le paso a la funcion c son todos punteros,
+ya que en FORTRAN todas las variables son punteros.
+
+Realizado ese arreglo, compilo el codigo en c como:
+
+gcc -c c-sum.c
+
+
+y genero el ejecutable con
+
+gfortran c-sum.o f-main.o -o main.e
+
+dando como ejecutable el archivo "main.e"
+
+
+
